@@ -4,6 +4,7 @@
   box-sizing: 0;
   padding: 0;
 }
+
 body {
   background-color: rgb(252, 248, 248);
 }
@@ -42,10 +43,10 @@ body {
 .closingwriteup {
   /* background-color: red; */
   /* background-image: linear-gradient(
-          rgb(104, 86, 86),
-          rgb(89, 89, 104),
-          transparent 
-        ), */
+      rgb(104, 86, 86),
+      rgb(89, 89, 104),
+      transparent 
+    ), */
 
   background-image: linear-gradient(
       to bottom,
@@ -72,11 +73,11 @@ form {
   box-shadow: 0 4px 2px 1px rgb(102, 98, 98);
 }
 /* .contactdata {
-      margin-right: 200px;
-    }
-    .contactform {
-      margin-left: 200px;
-    } */
+  margin-right: 200px;
+}
+.contactform {
+  margin-left: 200px;
+} */
 
 button {
   border: none;
@@ -113,4 +114,33 @@ label {
 }
 .dropamessage {
   margin-bottom: 2rem;
+}
+@media (max-width: 800px) {
+  .contactmethods {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 248, 248);
+    height: 80rem;
+  }
+  form {
+    margin: 0 auto;
+    margin-left: 41rem;
+  }
+  .contactdata {
+    margin: 0 auto;
+    margin-left: 50rem;
+  }
+  .openingwriteup {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
+    width: 850px;
+    margin-left: 29rem;
+  }
+  .closingwriteup {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 850px;
+    margin-left: 29rem;
+  }
 }
